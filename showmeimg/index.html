@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookmarklet</title>
+</head>
+
+<body>
+
+    <div>
+        <h2>drag this link and put it on your bookmarks bar.</h2>
+    </div>
+    <div>
+        <a
+            href="javascript:(function () {let images = document.querySelectorAll('img');document.querySelector('body').innerText = '';if (images) {images.forEach(function (image) {img = document.createElement('img');img.setAttribute('src', image.getAttribute('src'));document.body.appendChild(img);})}})()">showmeimg</a>
+    </div>
+</body>
+
+</html>
